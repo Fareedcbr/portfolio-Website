@@ -34,10 +34,22 @@
 
   <!-- About -->
   <section id="about">
-    <h2>About Me</h2>
-    <img src="assets/images/myphoto.jpg" alt="My Profile Picture" class="profile-img" />
-    <p>I am a passionate developer skilled in the MERN stack, with hands-on experience in modern web projects. I enjoy solving problems and building user-friendly websites and apps.</p>
+    <h2 class="about-title">About Me</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>I am a passionate developer skilled in the MERN stack, with hands-on experience in modern web projects. I enjoy solving problems and building user-friendly websites and apps.</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/myphoto.jpg" alt="My Profile Picture" id="profile-img" />
+      </div>
+    </div>
   </section>
+
+  <!-- Profile Image Modal -->
+  <div id="profile-modal" class="profile-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Profile Large" />
+  </div>
 
   <!-- Skills -->
   <section id="skills">
@@ -69,10 +81,39 @@
   <!-- Certifications -->
   <section id="certifications">
     <h2>Certifications</h2>
-    <ul>
-      <li>AI Internship – Hand Gesture Recognition</li>
-      <li>Java Certificate – HackerRank</li>
-    </ul>
+    <div class="cert-feed">
+        <div class="cert-card">
+        <a href="assets/certificates/certificate.pdf" target="_blank">
+          <img src="assets/certificates/certificate.jpg" alt="Certificate of C and C++ by sara academy" />
+        </a>
+        <p>Certificate of C and C++ – by Sara AcademyAI</p>
+      </div>
+      <div class="cert-card">
+        <a href="assets/certificates/ai-internship.pdf" target="_blank">
+          <img src="assets/certificates/ai-internship.jpg" alt="AI Internship Certificate" />
+        </a>
+        <p>AI Internship – Hand Gesture Recognition</p>
+      </div>
+      <div class="cert-card">
+        <a href="assets/certificates/java-hackerrank.pdf" target="_blank">
+          <img src="assets/certificates/java-hackerrank.jpg" alt="Java Certificate" />
+        </a>
+        <p>Java Certificate – HackerRank</p>
+      </div>
+      <div class="cert-card">
+        <a href="assets/certificates/mern-ey-aicte.pdf" target="_blank">
+          <img src="assets/certificates/mern-ey-aicte.jpg" alt="EY GDS & AICTE MERN Stack Certificate" />
+        </a>
+        <p>EY Global Delivery Services & AICTE – Building Modern Web Applications with MERN Stack (Next Gen Employability Program)</p>
+      </div>
+      <div class="cert-card">
+        <a href="assets/certificates/software_engineer_intern_certificate.pdf" target="_blank">
+          <img src="assets/certificates/software_engineer_intern_certificate.jpg" alt="Software Engineering Intern Certificate" />
+        </a>
+        <p>Software Engineering Intern – HackerRank</p>
+      </div>
+      <!-- Add more cert-card blocks as needed -->
+    </div>
   </section>
 
   <!-- Contact -->
