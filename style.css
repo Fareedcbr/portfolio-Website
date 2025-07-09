@@ -92,18 +92,31 @@ section {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .skills-grid div {
   background-color: #1f1f1f;
-  padding: 15px;
+  padding: 12px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #00bcd4;
+  box-shadow: 0 4px 8px rgba(0, 188, 212, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
+.skills-grid div:hover {
+  transform: scale(1.05);
+  background-color: #00bcd4;
+  color: #1f1f1f;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6); /* Light blue glow */
+}
+
+/* Projects */
 /* Projects */
 .project-card {
   background-color: #1f1f1f;
@@ -112,12 +125,13 @@ section {
   border-left: 5px solid #00bcd4;
   border-radius: 8px;
   color: #f1f1f1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.4); /* Light blue glow */
 }
 
 .project-card h3 {
@@ -299,7 +313,13 @@ footer a {
 
 @media (max-width: 600px) {
   .cert-feed {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+  section {
+    padding: 30px 5px;
+  }
+  h1, h2 {
+    font-size: 1.5em;
   }
 }
 
