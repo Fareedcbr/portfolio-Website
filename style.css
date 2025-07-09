@@ -110,8 +110,38 @@ section {
   padding: 20px;
   margin-top: 20px;
   border-left: 5px solid #00bcd4;
-  border-radius: 5px;
+  border-radius: 8px;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.project-card ul li strong {
+  color: #ffffff;
+}
+
 
 /* Contact Form */
 form {

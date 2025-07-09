@@ -19,7 +19,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     return;
   }
 
-  alert("Message sent successfully! (Demo purpose)");
+  alert("✅ Thank you! Your message has been sent.");
   this.reset();
 });
 
