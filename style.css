@@ -142,29 +142,40 @@ section {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
   margin-top: 20px;
   padding: 0 10px;
 }
 
+/* Each Skill Box */
 .skills-grid div {
   background-color: #1f1f1f;
-  padding: 12px;
+  padding: 20px;
+  height: 120px; /* Equal height box */
+  display: flex;
+  align-items: center;     /* center vertically */
+  justify-content: center; /* center horizontally */
   text-align: center;
-  border-radius: 8px;
-  font-weight: 500;
+  border-radius: 12px;
+  font-weight: 600;
   color: #00bcd4;
+
   box-shadow: 0 4px 8px rgba(0, 188, 212, 0.15);
-  transition: transform 0.3s ease, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: all 0.4s ease-in-out;
+
 }
 
+/* Hover Effect → Circle */
 .skills-grid div:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
   background-color: #00bcd4;
   color: #1f1f1f;
-  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6); /* Light blue glow */
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.8);
 }
+
+
 
 /* Projects */
 /* Projects */
