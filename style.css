@@ -46,38 +46,61 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 234, 255, 0.3);
 
-  box-shadow: 0 0 12px rgba(0, 234, 255, 0.4);
+  width: 92%;
+  margin: 20px auto;
+
+  padding: 14px 30px;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+
+  border-radius: 50px;   /* makes it pill shaped */
+
+  border: 1px solid rgba(0, 234, 255, 0.25);
+
+  box-shadow:
+    0 0 12px rgba(0, 234, 255, 0.3),
+    0 0 25px rgba(0, 234, 255, 0.15);
+
   position: sticky;
-  top: 0;
+  top: 20px;
   z-index: 1000;
-
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #00bcd4;
+.logo{
+  font-size:1.5em;
+  font-weight:bold;
+  color:#00bcd4;
+
+  text-shadow:
+  0 0 6px #00eaff,
+  0 0 14px #00eaff;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 22px;
+  gap: 18px;
+
+  background: rgba(0,0,0,0.35);
+  padding: 6px 16px;
+  border-radius: 40px;
 }
 
 .nav-links li a {
   color: #e8faff;
-  font-size: 1.05em;
-  transition: 0.3s;
+  font-size: 1em;
+  padding: 6px 12px;
+  transition: 0.3s ease;
 }
 .nav-links li a:hover {
   color: var(--neon-blue);
-  text-shadow: 0 0 10px var(--neon-blue);
+  background: rgba(0,234,255,0.15);
+  border-radius: 20px;
+  padding: 6px 12px;
+
+  box-shadow: 0 0 10px var(--neon-blue);
 }
 
 /* Hamburger styles */
@@ -289,7 +312,7 @@ section {
   padding: 10px 18px;
   color: #00eaff;
   border: 1px solid #00eaff;
-  border-radius: 10px;
+  border-radius:10px;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
@@ -339,16 +362,31 @@ button[type="submit"]:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px 40px;
+  padding: 30px 40px;
   background: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  text-align: center;
   border-top: 1px solid rgba(0,234,255,0.3);
   box-shadow: 0 0 20px rgba(0,234,255,0.2);
+  backdrop-filter: blur(6px);
+}
+
+footer p {
+  margin: 10px 0;
+  color: #ddd;
+  font-size: 14px;
 }
 
 footer a {
-  margin: 0 10px;
+  margin: 0 12px;
+  text-decoration: none;
+  color: #00eaff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: 0 0 8px #00eaff;
 }
 
 .invisible {
@@ -568,3 +606,4 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+

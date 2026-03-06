@@ -20,14 +20,15 @@
    <link rel="manifest" href="assets/site.webmanifest">
    <link rel="shortcut icon" href="assets/favicon.ico">
 
-  <div id="vanta-bg" style="width:100%; height:100vh; position:fixed; top:0; left:0; z-index:-1;"></div>
-
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-4VK9LRYM3H');
   </script>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -53,12 +54,12 @@
         <span class="bar"></span>
       </button>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#about">👤 About</a></li>
+        <li><a href="#skills">💻 Skills</a></li>
+        <li><a href="#projects">📦 Projects</a></li>
+        <li><a href="#certifications">📜 Certifications</a></li>
+        <li><a href="#contact">📧 Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -160,7 +161,6 @@
           🔗 View on GitHub
         </a>
       </div>
-  </div>
     </div>
     <!-- 2. Gesture Recognition System -->
     <div class="project-card">
@@ -218,7 +218,7 @@
 
   <!-- Certifications -->
   <section id="certifications">
-    <h2 style="color: #00bcd4;">certifications</h2>
+    <h2 style="color: #00bcd4;">Certifications</h2>
     <div class="cert-feed">
         <div class="cert-card">
         <a href="assets/certificates/certificate.pdf" target="_blank">
@@ -308,13 +308,31 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>Connect with me:</p>
-    <a href="tel:+918951446221">8951446221</a>
-    <a href="https://github.com/Fareedcbr" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/md-fareeduddin/" target="_blank">LinkedIn</a>
-    <p>&copy; 2025 Md Fareeduddin. All rights reserved.</p>
-  </footer>
+ <footer class="footer">
+
+  <div class="footer-socials">
+    <a href="tel:+918951446221" title="Call">
+      <i class="fas fa-phone"></i>
+    </a>
+
+    <a href="https://github.com/Fareedcbr" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/md-fareeduddin/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="mailto:mdfareedcbr@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <p class="footer-copy">
+    © 2025 <span>Md Fareeduddin</span>. All rights reserved.
+  </p>
+
+</footer>
 
   <script src="script.js"></script>
   <script>
