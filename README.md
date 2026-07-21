@@ -52,7 +52,7 @@ portfolio-Website/
 
 - **LinkedIn:** [md fareeduddin cbr](https://www.linkedin.com/in/md-fareeduddin-cbr/)
 - **GitHub:** [Fareedcbr](https://github.com/Fareedcbr)
-- **Email:** your.email@example.com
+- **Email:** mdfareedcbr@gmail.com
 
 ---
 
